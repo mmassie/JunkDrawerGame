@@ -62,10 +62,6 @@ class App extends Component {
     });
   };
 
-  selectAll = () => this.selectAllCheckboxes(true);
-
-  deselectAll = () => this.selectAllCheckboxes(false);
-
   handleCheckboxChange = changeEvent => {
     const { name } = changeEvent.target;
 
