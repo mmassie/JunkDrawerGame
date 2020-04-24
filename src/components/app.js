@@ -4,19 +4,19 @@ import Checkbox from "./checkbox";
 
 const OPTIONS = [
     "Phillips & Slot Screwdriver (All-in-One’s accepted)",
-    "A bushel of batteries (3 types)",
+    "A bushel of Batteries (3 types)",
     "Chopsticks",
     "Lip Lotion/Balm",
     "Hand Lotion/Sanitizer (JDB COVID Edition)",
     "Box Cutter",
     "Random Loyalty/Membership Card",
-    "A nest of USB cables",
+    "A nest of USB Cables",
     "Nails",
     "Scissors",
     "Rubber Bands",
-    "Condiment Packets", 
-    "Light bulb",
-    "Matches or lighter",
+    "Condiment Packet", 
+    "Light Bulb",
+    "Matches or Lighter",
     "Notepad (Adhesive back yellow squares count)",
     "Pens",
     "Keys",
@@ -36,7 +36,10 @@ const OPTIONS = [
     "Plant/FLower Seeds",
     "Post Card",
     "Bottle Cap",
-    "Tape Measure"
+    "Tape Measure",
+    "Free IKEA Allen Wrench (x3)",
+    "Expired Bed Bath & Beyond Coupon",
+    "Furniture Foot"
 ];
 
 class App extends Component {
@@ -48,18 +51,6 @@ class App extends Component {
       }),
       {}
     )
-  };
-
-  selectAllCheckboxes = isSelected => {
-    Object.keys(this.state.checkboxes).forEach(checkbox => {
-      // BONUS: Can you explain why we pass updater function to setState instead of an object?
-      this.setState(prevState => ({
-        checkboxes: {
-          ...prevState.checkboxes,
-          [checkbox]: isSelected
-        }
-      }));
-    });
   };
 
   handleCheckboxChange = changeEvent => {
@@ -79,10 +70,13 @@ class App extends Component {
     Object.keys(this.state.checkboxes)
       .filter(checkbox => this.state.checkboxes[checkbox])
       .forEach(checkbox => {
-        console.log(checkbox, "is selected."); //Ok now count it. NOW
+        console.log(checkbox, "is selected."); 
       });
   };
 
+  //OK now let's count it and send to console.
+  
+  
   createCheckbox = option => (
     <Checkbox
       label={option}
