@@ -1,6 +1,6 @@
 
 import React, { Component } from "react";
-import Checkbox from "./Checkbox";
+import Checkbox from "./checkbox";
 
 const OPTIONS = [
     "Phillips & Slot Screwdriver (All-in-One’s accepted)",
