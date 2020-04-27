@@ -4,17 +4,16 @@ import Checkbox from "./checkbox";
 
 const OPTIONS = [
     "Phillips & Slot Screwdriver (All-in-One’s accepted)",
-    "A bushel of Batteries (3 types)",
+    "A bushel of Batteries (3 diff. types)",
     "Chopsticks",
     "Lip Lotion/Balm",
-    "Hand Lotion/Sanitizer (JDB COVID Edition)",
-    "Box Cutter",
+    "Box Cutter/Knife",
     "Random Loyalty/Membership Card",
     "A nest of USB Cables",
-    "Nails",
+    "Nails/Screws",
     "Scissors",
     "Rubber Bands",
-    "Condiment Packet", 
+    "Condiment Packet(s)", 
     "Light Bulb",
     "Matches or Lighter",
     "Notepad (Adhesive back yellow squares count)",
@@ -39,7 +38,9 @@ const OPTIONS = [
     "Tape Measure",
     "Free IKEA Allen Wrench (x3)",
     "Expired Bed Bath & Beyond Coupon",
-    "Furniture Foot"
+    "Furniture Foot/Pad",
+    "SD Card",
+    "Hand Lotion/Sanitizer (JDG's COVID Edition)",
 ];
 
 class App extends Component {
@@ -67,15 +68,21 @@ class App extends Component {
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
 
+    /*
+    let shitIhave = checkbox.filter(checked => checked.checked == true);
+    console.log(shitIhave.length)
+    */
+
     Object.keys(this.state.checkboxes)
       .filter(checkbox => this.state.checkboxes[checkbox])
       .forEach(checkbox => {
-        console.log(checkbox, "is selected."); 
+        console.log(checkbox, "is selected.");
       });
+
   };
 
-  //OK now let's count it and send to console.
-  
+
+ 
   
   createCheckbox = option => (
     <Checkbox
@@ -85,6 +92,7 @@ class App extends Component {
       key={option}
     />
   );
+
 
   createCheckboxes = () => OPTIONS.map(this.createCheckbox);
 
