@@ -69,7 +69,7 @@ class App extends Component {
     formSubmitEvent.preventDefault();
 
     /*
-    let shitIhave = checkbox.filter(checked => checked.checked == true);
+    let shitIhave = Checkboxes.filter(checked => checked.checked == true);
     console.log(shitIhave.length)
     */
 
@@ -78,7 +78,6 @@ class App extends Component {
       .forEach(checkbox => {
         console.log(checkbox, "is selected.");
       });
-
   };
 
 
