@@ -32,7 +32,7 @@ const OPTIONS = [
     "Mystery Adapter (Seltsamerstecker)",
     "Random free included unnecessary accessory bag",
     "Sunglasses",
-    "Plant/FLower Seeds",
+    "Plant/Flower Seeds",
     "Post Card",
     "Bottle Cap",
     "Tape Measure",
@@ -40,6 +40,8 @@ const OPTIONS = [
     "Expired Bed Bath & Beyond Coupon",
     "Furniture Foot/Pad",
     "SD Card",
+    "Hair Tie",
+    "Loose Change",
     "Hand Lotion/Sanitizer (JDG's COVID Edition)"
 ];
 
