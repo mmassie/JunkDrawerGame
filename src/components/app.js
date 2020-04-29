@@ -42,7 +42,9 @@ const OPTIONS = [
     "SD Card",
     "Hair Tie",
     "Loose Change",
-    "Hand Lotion/Sanitizer (JDG's COVID Edition)"
+    "Ticket Stub",
+    "Menu",
+    "Hand Lotion/Sanitizer (COVID Edition)"
 ];
 
 class App extends Component {
