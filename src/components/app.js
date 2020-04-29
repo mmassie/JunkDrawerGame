@@ -68,10 +68,9 @@ class App extends Component {
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
 
-    /*
-    let shitIhave = Checkboxes.filter(checked => checked.checked == true);
-    console.log(shitIhave.length)
-    */
+const arrayOfCheckboxes = Object.keys(this.state.checkboxes).filter(checkbox => this.state.checkboxes[checkbox])
+
+window.alert(" Your total clutter score is " + arrayOfCheckboxes.length)
 
     Object.keys(this.state.checkboxes)
       .filter(checkbox => this.state.checkboxes[checkbox])
