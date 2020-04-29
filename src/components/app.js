@@ -40,7 +40,7 @@ const OPTIONS = [
     "Expired Bed Bath & Beyond Coupon",
     "Furniture Foot/Pad",
     "SD Card",
-    "Hand Lotion/Sanitizer (JDG's COVID Edition)",
+    "Hand Lotion/Sanitizer (JDG's COVID Edition)"
 ];
 
 class App extends Component {
@@ -69,8 +69,9 @@ class App extends Component {
     formSubmitEvent.preventDefault();
 
 const arrayOfCheckboxes = Object.keys(this.state.checkboxes).filter(checkbox => this.state.checkboxes[checkbox])
+const totalCount = Object.keys(this.state.checkboxes)
 
-window.alert(" Your total clutter score is " + arrayOfCheckboxes.length)
+window.alert(" Your total clutter score is " + arrayOfCheckboxes.length + " of " + totalCount.length)
 
     Object.keys(this.state.checkboxes)
       .filter(checkbox => this.state.checkboxes[checkbox])
