@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import Checkbox from "./checkbox";
+import Modal from 'react-modal';
 
 const OPTIONS = [
     "Phillips & Slot Screwdriver (All-in-One’s accepted)",
@@ -74,6 +75,8 @@ class App extends Component {
 
 const arrayOfCheckboxes = Object.keys(this.state.checkboxes).filter(checkbox => this.state.checkboxes[checkbox])
 const totalCount = Object.keys(this.state.checkboxes)
+
+//add a function to make some if/else comments about the score
 
 window.alert(" Your total clutter score is " + arrayOfCheckboxes.length + " of " + totalCount.length)
 

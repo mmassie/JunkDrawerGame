@@ -19,6 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
+        trackingId: `UA-10525263-2`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
