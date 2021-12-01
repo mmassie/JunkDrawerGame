@@ -7,8 +7,9 @@ const OPTIONS = [
   "Kohl's",
   "Highway Expansion",
   "Wrapped in the axel",
+  "Progressive Elaboration",
   "Adrenal Glands",
-  "Progressive Elaboration"
+  "I have to go to a more important meeting"
 ];
 
 class App extends Component {
