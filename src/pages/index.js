@@ -10,8 +10,8 @@ import App from "../components/app";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Clutter score your junk drawer</h1>
-    <p>Tally up you score and let's hear it:</p>
+    <h1>Let's play Bingo!</h1>
+    <p>Tally up you score when you hear them:</p>
     <App />
   </Layout>
 )
