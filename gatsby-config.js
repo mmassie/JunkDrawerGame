@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Junk Drawer Scorecard Game`,
-    description: `Clutter score your junk drawer `,
+    title: `It's Bingo`,
+    description: `It's bingo, duh`,
     author: `@mmassie`,
   },
   plugins: [
